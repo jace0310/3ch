@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.bit.shop01.model.productTypeDao">
+  
+  	<select id="selectAll" resultType="com.bit.shop01.model.entity.productVo">
+  	SELECT * FROM PRODUCT ORDER BY PRODUCTNUM DESC
+  	</select>
+  	
+<!--   	<select id="selectOne" parameterType="int" resultType="com.bit.shop01.model.entity.productVo">
+  	SELECT a.productNum, a.productType, a.productName, a.explan, a.price, a.inventory, a.proImg, b.reviewNum, b.memId, b.title, b.contents, b.review_date
+      FROM PRODUCT a
+      FULL OUTER JOIN SHOP_BBS_REVIEW b
+	        ON ( a.proImg = b.proImg) where a.PRODUCTNUM=#{productNum}
+  	
+  	</select> -->
+
+  	<select id="reviewAll" resultType="com.bit.shop01.model.entity.productVo">
+  	SELECT * FROM SHOP_BBS_REVIEW ORDER BY REVIEWNUM 
+  	</select>
+  	
+  	
+  	<select id="reviewOne" parameterType="int" resultType="com.bit.shop01.model.entity.productVo">
+  	SELECT * FROM SHOP_BBS_REVIEW WHERE REVIEWNUM=#{value}
+  	</select>
+  	
+  	<update id="reviewUpdate" parameterType="com.bit.shop01.model.entity.productVo">
+  	UPDATE SHOP_BBS_REVIEW SET TITLE=#{title},CONTENTS=#{contents}, REVIEW_DATE = sysdate WHERE REVIEWNUM=#{reviewNum}
+  	</update>
+  
+  	<delete id="reviewDelete" parameterType="int">
+  	DELETE FROM SHOP_BBS_REVIEW WHERE REVIEWNUM=#{value}
+  	</delete>  	
+  	
+<!--   	<insert id="join" parameterType="com.bit.shop01.model.entity.productVo">
+
+		insert into mem 
+
+		values(#{memId},#{memName},#{memPassword},#{email},#{address},#{hp},#{gender} )
+	</insert>
+  	 -->
+  </mapper>
+  
+  
+  

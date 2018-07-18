@@ -1,85 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-     pageEncoding="UTF-8"%> 
+     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core"%>      
 <!DOCTYPE html>
 <div class="container">
 	<div class="row">
 	  <div class="col-md-3">
-	    <a><img  src="resources/imgs/outer/outer1/outer1-10.jpg" alt="..." class="img-responsive img-rounded"></a>
+		<%for(int i=1; i<3; i++) {%>
+	<c:forEach items="${alist }" var="product">
+	    <a><img  src="../resources/imgs/outer/outer<%=i %>/outer<%=i %>-10.jpg" alt="..." class="img-responsive img-rounded"></a>
 	    <br/>
-	    <a href="../products/outer/detail1">자켓(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>35,000원</h5>
+	    <a style="font-size: 30px;" href="outDetail?idx=${product.productNum }">${product.productName}</a>
+	    <br/>		
+	    <a style="font-size: 25px;" href="outDetail?idx=${product.productNum }">${product.explan}</a>
 	    <br/>
-	    <a><img  src="resources/imgs/outer/outer2/outer2-10.jpg" alt="..." class="img-responsive img-rounded"></a>
+	    <a style="font-size: 25px;" href="outDetail?idx=${product.productNum }">${product.price}</a>
 	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>35,000원</h5>
-	    <br/>
-	     <a><img  src="../resources/imgs/img01.jpg" alt="..." class="img-responsive img-rounded"></a>
-	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>35,000원</h5>
-	    <br/>
-	     <a><img  src="../resources/imgs/img01.jpg" alt="..." class="img-responsive img-rounded"></a>
-	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>35,000원</h5>
-	    <br/>
+	</c:forEach>
+	    <%} %>
 	  </div>  
-	  <div class="col-md-3">
-	    <a><img src="../resources/imgs/img02.jpg" alt="..." class="img-responsive img-rounded"></a>
-	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>25,000원</h5>
-	    <br/>
-	    <a><img  src="../resources/imgs/img02.jpg" alt="..." class="img-responsive img-rounded"></a>
-	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>35,000원</h5>
-	    <br/>
-	     <a><img  src="../resources/imgs/img02.jpg" alt="..." class="img-responsive img-rounded"></a>
-	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>35,000원</h5>
-	    <br/>
-	     <a><img  src="../resources/imgs/img02.jpg" alt="..." class="img-responsive img-rounded"></a>
-	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>35,000원</h5>
-	    <br/>
-	  </div>  
-	  <div class="col-md-3">  
-	    <a><img src="../resources/imgs/img01.jpg" alt="..." class="img-responsive img-rounded"></a>
-	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>42,000원</h5>
-	    <br/>
-	    <a><img  src="../resources/imgs/img02.jpg" alt="..." class="img-responsive img-rounded"></a>
-	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>35,000원</h5>
-	    <br/>
-	     <a><img  src="../resources/imgs/img04.jpg" alt="..." class="img-responsive img-rounded"></a>
-	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>35,000원</h5>
-	    <br/>
-	     <a><img  src="../resources/imgs/img02.jpg" alt="..." class="img-responsive img-rounded"></a>
-	    <br/>
-	    <a href="#">하늘하늘원피스(5 color)</a>
-	    <h6>누구에게나 잘 어울리는 하늘색 원피스</h6>
-	    <h5>35,000원</h5>
-	    <br/>
-	  </div>
 	</div>
 </div>
