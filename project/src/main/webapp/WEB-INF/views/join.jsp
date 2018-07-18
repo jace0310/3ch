@@ -25,7 +25,7 @@
       <a class="navbar-brand" href="/shop01/">
 	      <p style="font-size: 26px; font: oblique; font-family: monospace; color: #2E64FE;"><strong>CIELO</strong></p>
 <!--           <img height="160%" alt="..."  src="resources/imgs/cielo.jpg" /> -->
-      </a>
+      </a> 
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
