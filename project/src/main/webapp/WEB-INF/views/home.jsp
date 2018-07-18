@@ -25,8 +25,6 @@ body { font-family: 'Nanum Gothic', sans-serif;}
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
 <style type="text/css">
  /* 사이드바 래퍼 스타일 */
   
@@ -93,8 +91,6 @@ body { font-family: 'Nanum Gothic', sans-serif;}
 }
 
 .col-md-3 { 
-
-   
  left: 300px; 
  top: 100px;
 
