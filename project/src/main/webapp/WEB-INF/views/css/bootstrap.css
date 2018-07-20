@@ -1122,7 +1122,7 @@ img {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 .img-rounded {
@@ -6240,7 +6240,7 @@ button.close {
 }
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
 }
 .carousel-inner > .item {
@@ -6268,14 +6268,14 @@ button.close {
   .carousel-inner > .item.next,
   .carousel-inner > .item.active.right {
     left: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(50%, 0, 0);
+            transform: translate3d(50%, 0, 0);
   }
   .carousel-inner > .item.prev,
   .carousel-inner > .item.active.left {
     left: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
   }
   .carousel-inner > .item.next.left,
   .carousel-inner > .item.prev.right,
@@ -6338,7 +6338,7 @@ button.close {
   background-repeat: repeat-x;
 }
 .carousel-control.right {
-  right: 0;
+  right: 500px;
   left: auto;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);

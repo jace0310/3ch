@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 
 body { font-family: 'Nanum Gothic', sans-serif;}
+
+/* 메인 화면 */
+.carousel {
+  position: relative;
+  width: 80%;
+  margin-right: 30px;
+  
+}
 </style>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -26,6 +34,7 @@ body { font-family: 'Nanum Gothic', sans-serif;}
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <style type="text/css">
+
  /* 사이드바 래퍼 스타일 */
   
   #page-wrapper {
@@ -142,12 +151,12 @@ body { font-family: 'Nanum Gothic', sans-serif;}
       <li><a href="not_bbs">Notice</a></li>
       <li><a href="q&a">Q&A</a></li>
       <li><a href="rev_bbs">Review</a></li>
+      <li class="btn-top"><a href="/shop01/"><span>HOME</span></a></li>
     </ul>
   </div>
 </div>
-
   <!-- Wrapper for slides -->
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="float: right;">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -259,23 +268,23 @@ body { font-family: 'Nanum Gothic', sans-serif;}
 	    <h5>35,000원</h5>
 	    <br/>
 	  </div>
-	  </div>
-	  </div>
+  </div>
+ </div>
 	  <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<p align="center">footer test</p>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<p align="center">footer test</p>
 </div>
 </body>
 </html>
